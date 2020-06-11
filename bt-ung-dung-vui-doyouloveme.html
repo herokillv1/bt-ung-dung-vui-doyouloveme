@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt-ung-dung-vui-doyouloveme</title>
+    </head>
+<body>
+<h1 style="position:absolute">Do you love me?</h1>
+<input type="button" value=" YES " onclick="yesClick()" style="position:absolute"/>
+<input type="button" id="btnNo" value="  NO  " onmouseover="noHover()" style="position:absolute"/>
+
+<script type="text/javascript">
+    function yesClick()
+    {
+        alert("<3 được nhớ>");
+    }
+    function noHover()
+    {
+        let x = Math.random() * window.innerWidth;
+        let y = Math.random() * window.innerHeight;
+        document.getElementById('btnNo').style.left = x + 'px';
+        document.getElementById('btnNo').style.top = y + 'px';
+    }
+</script>
+</body>
+</html>
